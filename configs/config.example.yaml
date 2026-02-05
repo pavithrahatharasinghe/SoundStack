@@ -1,0 +1,36 @@
+app:
+  data_dir: "./storage"
+  log_level: "info"
+  concurrency: 4
+  secrets_file: "./configs/secrets.yaml"
+spotify:
+  client_id: ""
+  client_secret: ""
+  redirect_url: ""
+  refresh_token: ""
+musicbrainz:
+  user_agent: "SoundStack/0.1 (email@example.com)"
+  rate_limit_ms: 1000
+  cache_ttl: "24h"
+  cache_dir: "./storage/cache/musicbrainz"
+slskd:
+  base_url: "http://localhost:5030"
+  username: ""
+  password: ""
+ytdlp:
+  path: "./tools/yt-dlp/yt-dlp"
+ffprobe:
+  path: "./tools/ffmpeg/ffprobe"
+library:
+  root: "D:/ORGANIZED MEDIA/Music"
+  flac_root: "Music/FLAC"
+  video_root: "Videos"
+  create_artist_folders: true
+rules:
+  bucket_overrides:
+    "福原美穂": "J-POP"
+  always_try_video: true
+  max_audio_candidates: 8
+  duration_tolerance_sec: 3
+  playlist_buckets: {}
+
