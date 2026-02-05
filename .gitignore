@@ -1,0 +1,9 @@
+# Build artifacts
+soundstack
+*.db
+
+# Local storage and temp
+storage/
+configs/config.yaml
+.env
+
